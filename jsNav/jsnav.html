@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Navigation</title>
+    <link rel="stylesheet" href="jsnav.css">
+    <link rel="stylesheet" href="init.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+
+    <nav class="mainNav col-100 floatLft relative">
+        <div class="navWrapp">
+            <div class="navbar col-100 floatLft relative">
+                <div class="navLogo floatLft relative">
+                    <a href="javascript:;">
+                        <img src="logo.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="navContent floatLft relative">
+                    <ul class="nav-navbar dFlex">
+                        <li class="nav-item"><a href="javascript:;" class="nav-link floatLft">Home</a></li>
+
+                        <li class="nav-item dropdown relative">
+                            <a href="javascript:;" class="nav-link floatLft dropbtn" onclick="myFunction(event)">
+                                About Us <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul id="myDropdown1" class="dropdown-content">
+                                <li class="floatLft col-100"><a href="javasript:;" class="floatLft col-100">About CEO</a></li>
+                                <li class="floatLft col-100"><a href="javasript:;" class="floatLft col-100">About Team</a></li>
+                                <li class="floatLft col-100"><a href="javasript:;" class="floatLft col-100">About Company</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown relative">
+                            <a href="javascript:;" class="nav-link floatLft dropbtn" onclick="myFunction(event)">
+                                Services <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul id="myDropdown2" class="dropdown-content">
+                                <li class="floatLft col-100"><a href="javasript:;" class="floatLft col-100">Service 1</a></li>
+                                <li class="floatLft col-100"><a href="javasript:;" class="floatLft col-100">Service 2</a></li>
+                                <li class="floatLft col-100"><a href="javasript:;" class="floatLft col-100">Service 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="javascript:;" class="nav-link floatLft">Gallery</a></li>
+                        <li class="nav-item"><a href="javascript:;" class="nav-link floatLft">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <script src="jquery.min.js"></script>
+    <script src="jsnav.js"></script>
+</body>
+</html>
