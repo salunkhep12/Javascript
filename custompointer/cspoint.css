@@ -1,0 +1,79 @@
+*{padding: 0; margin: 0 ;box-sizing: border-box; font-family: 'Courier New', Courier, monospace;}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  cursor: none; /* Hide default cursor */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+
+.cursor {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  pointer-events: none;
+  background: rgba(255, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  transition: transform 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* Cursor on hover effect */
+.navbar ul li a:hover ~ .cursor, 
+.section:hover ~ .cursor {
+  transform: scale(2);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#section5.hover{background-color: rgb(0, 255, 102); transform: scale(1.2);}
+ 
